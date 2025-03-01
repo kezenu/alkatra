@@ -37,5 +37,10 @@
     background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
+    border: 30px solid #000000;
     
+}
+.galeri{
+ padding: 1%; 
+ border: 40px solid 
 }
