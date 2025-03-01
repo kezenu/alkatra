@@ -27,3 +27,15 @@
 .layanan{
     color: #ffffff;
 }
+
+.staff2{
+    background: url(source/staff.png);
+    background-size:contain;
+    padding-top:0;
+    padding-bottom: 10%;
+    height:920px;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    
+}
