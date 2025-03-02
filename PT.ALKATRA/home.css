@@ -5,6 +5,10 @@
    padding-bottom: 20%;
 }
 
+.PT.ALKATRA{
+    height: 20px;
+    width: 20px;
+}
 .banner h4{
     font-family: arial ;
     color: #ffffff;
@@ -43,4 +47,23 @@
 .galeri{
  padding: 1%; 
  border: 40px solid 
+}
+
+.copyright{
+    background-color: #000000;
+    background-size: cover;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+}
+
+.IG{
+    height: 30px;
+    width: 30px;
+    margin: 1px;
+    text-decoration:  none;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
