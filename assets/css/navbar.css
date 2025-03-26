@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 80px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-items: flex-end;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+}
+.logo img{
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+    height: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    height: 100%;
+}
+nav ul li{
+    height: 100%;
+    padding: 10px;
+    align-content: center;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+}
+button{
+    background-color: #dc3545; /* Warna merah Bootstrap */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border */
+    padding: 10px 16px; /* Padding */
+    font-size: 16px; /* Ukuran font */
+    border-radius: 5px; /* Membuat sudut agak melengkung */
+    cursor: pointer; /* Ubah cursor jadi pointer */
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #c82333;
+}
+.line1, .line2, .line3 {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px;
+}
+.burger{
+    position: fixed;
+    right: 20px;
+    transition: .4 ease-in-out;
+    display: none;
+}
+@media screen and (max-width:765px) {
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0.637);
+        height: 100vh;
+        width: 250px;
+        display: none;
+    }
+    nav ul li{
+        margin: 10px 5px;
+        display: flex;
+        position: relative;
+        top: 80px;
+        width: 100%;
+        justify-content: flex-end;
+        height: fit-content;
+    }
+
+    #hiden{
+        display: none;
+    }
+
+    #hiden.show{
+        display: flex;
+    }
+}
