@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #dc3545;
 }
 
 nav{
@@ -68,6 +69,7 @@ button:hover{
     transition: .4 ease-in-out;
     display: none;
 }
+
 @media screen and (max-width:765px) {
     .burger{
         display: block;
