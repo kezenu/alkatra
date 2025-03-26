@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+                        ". ."
+                        "heroKiri heroKanan";
+    background:url(/assets/image/wp4312252.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.heroKiri{
+    grid-area: heroKiri;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                        "slogan"
+                        "isiHero";
+}
+.slogan{
+    grid-area: slogan;
+    align-content: flex-end;
+    padding-left: 40px;
+}
+.isiHero{
+    grid-area: isiHero;
+    padding: 40px;
+}
+.isiHero p{
+    padding-bottom: 20px;
+}
+.heroKanan{
+    grid-area: heroKanan;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    justify-content: center;
+}
+.heroKanan img{
+    width: 350px;
+    height: auto;
+    align-self: center;
+}

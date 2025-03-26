@@ -9,6 +9,7 @@ footer{
     height: 450px;
     display: flex;
     align-content: center;
+    width: 100%;
 }
 
 .containerFooter{
