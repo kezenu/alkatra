@@ -19,5 +19,13 @@
         width: 300px;
         height: auto;
     }
-    
+    .layanan{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .preTitle{
+        justify-self: center;
+        align-self: center;
+    }
 }
