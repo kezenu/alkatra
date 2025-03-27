@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+    .hero{
+        grid-template-rows: 80px 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "."
+        "heroKanan"
+        "heroKiri";
+        width: 100%;
+        justify-content: center;
+    }
+    .heroKiri{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .heroKanan img{
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+    
+}

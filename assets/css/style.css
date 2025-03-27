@@ -28,10 +28,12 @@
     grid-area: slogan;
     align-content: flex-end;
     padding-left: 40px;
+    color: white;
 }
 .isiHero{
     grid-area: isiHero;
     padding: 40px;
+    color: white;
 }
 .isiHero p{
     padding-bottom: 20px;
@@ -47,4 +49,51 @@
     width: 350px;
     height: auto;
     align-self: center;
+}
+
+.layanan{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "preTitle preTitle preTitle"
+    "layanan1 layanan2 layanan3"
+    ;
+    padding: 20px;
+    gap: 20px;
+}
+
+.preTitle{
+    grid-area: preTitle;
+    align-self: flex-start;
+    justify-self: center;
+
+}
+
+.preTitle h1{
+    font-size: 40px;
+}
+
+.layanan1{
+    grid-area: layanan1;
+    display: grid;
+    grid-template-rows: auto 1fr 3fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.layanan2{
+    grid-area: layanan2;
+    display: grid;
+    grid-template-rows: auto 1fr 3fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.layanan3{
+    grid-area: layanan3;
+    display: grid;
+    grid-template-rows: auto 1fr 3fr;
+    justify-items: center;
+    text-align: center;
 }
