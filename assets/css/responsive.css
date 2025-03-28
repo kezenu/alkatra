@@ -8,6 +8,7 @@
         "heroKiri";
         width: 100%;
         justify-content: center;
+        padding-top: -20px;
     }
     .heroKiri{
         display:flex;
@@ -16,7 +17,7 @@
     }
     .heroKanan img{
         display: block;
-        width: 300px;
+        width: 200px;
         height: auto;
     }
     .layanan{
@@ -28,4 +29,12 @@
         justify-self: center;
         align-self: center;
     }
+    .isiHero{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .slogan h1{
+        font-size: 20px;
+    }
+
 }
