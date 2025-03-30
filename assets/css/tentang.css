@@ -14,6 +14,34 @@
     flex-direction: column;
     padding-top: 80px
 }
+.tentang1 h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tentang1 p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.tentang1 ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0 20px;
+    list-style:decimal;
+
+}
 .navbar-container {
     background-color: white;
+}
+
+.visiMisi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px; 
 }
