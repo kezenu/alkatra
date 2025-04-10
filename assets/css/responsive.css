@@ -1,4 +1,5 @@
 @media only screen and (max-width: 768px) {
+    /* responsive bagian index.html */
     .hero{
         grid-template-rows: 80px 1fr 1fr;
         grid-template-columns: 1fr;
@@ -35,6 +36,24 @@
     }
     .slogan h1{
         font-size: 20px;
+    }
+    
+    /* responsive bagian tentang.html */
+    .tentang1 p{
+        font-size: 15px;
+    }
+    .visiMisi{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visiMisi h2{
+        text-align: center;
+    }
+
+    .nilaiPerusahaan{
+        display: flex;
+        flex-direction: column;
     }
 
 }

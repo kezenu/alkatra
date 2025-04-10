@@ -4,28 +4,34 @@
     box-sizing: border-box;
 
 }
+
 #tentang {
     background-color:#1E1E1E;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
+
 .tentang1{
     display:flex;
     flex-direction: column;
     padding-top: 80px;
     justify-content: center;
 }
+
 .tentang1 h1{
     font-size: 30px;
     align-self: center;
     padding-bottom: 40px;
 }
+
 .tentang1 p{
     text-align: left;
     font-size: 20px;
     font-weight: 400;
-
+    padding: 20px;
+    text-align: justify;
 }
+
 .tentang1 ol{
     display: flex;
     flex-direction: column;
@@ -34,6 +40,7 @@
     list-style:decimal;
 
 }
+
 .navbar-container {
     background-color: white;
 }
@@ -49,10 +56,12 @@
     gap: 20px;
     padding: 20px;
 }
+
 .visiMisi h2{
     grid-area: judul;
     justify-self: center;
 }
+
 .visi {
     justify-items: center;
     text-align: center;
@@ -78,9 +87,20 @@
 }
 
 .nilaiPerusahaan{
-    display: flex;
-    padding: 10px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:        
+                        "judulNilai judulNilai judulNilai"
+                        "kepercayaan dedikasi kinerja"
+                        ;
+    padding: 20px;
     gap: 20px;
+}
+
+.nilaiPerusahaan h2{
+    grid-area: judulNilai;
+    text-align: center;
 }
 
 .kepercayaan{
@@ -90,7 +110,9 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    grid-area: kepercayaan;
 }
+
 .dedikasi{
     background-color: white;
     color: black;
@@ -98,8 +120,9 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
+    grid-area: dedikasi;
 }
+
 .kinerja{
     background-color: white;
     color: black;
@@ -107,13 +130,16 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-
+    grid-area: kinerja;
 }
 
 .keunggulan{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr;
     padding: 30px;
     width: 100%;
+}
 
+.keunggulan ol{
+    padding: 20px;
 }
