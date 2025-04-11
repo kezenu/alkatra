@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 footer{
-    background-color: #1E1E1E;
     color:white;
     height: 450px;
     display: flex;
     align-content: center;
     width: 100%;
+    margin-bottom: 35px;
 }
 .containerFooter{
     margin: 30px;
@@ -23,9 +23,9 @@ footer{
         ;
     justify-content: center;
     justify-items: center;
-    background: linear-gradient( 1deg, rgb(87, 0, 87), rgb(248, 41, 255) );
+    background: rgb(49, 49, 49);
     padding: 30px;
-    border: 2px solid purple;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50px;
     width: 100%;
 }
@@ -61,15 +61,47 @@ footer{
     grid-area: medsosFooter;
     align-self: center;
     display: flex;
+    align-content: center;
 }
+
 .copyFooter{
     grid-area: copyFooter;
+}
+
+#fbLogo{
+  height: 60px;
+  cursor: pointer;
+  width: auto;
+}
+
+#fbLogo:hover {
+  fill: white;
+}
+
+#igLogo{
+  height: 60px;
+  cursor: pointer;
+  width: auto;
+}
+#igLogo:hover{
+  fill: white;
+}
+
+#inLogo{
+  height: 60px;
+  cursor: pointer;
+  width: auto;
+}
+
+#inLogo:hover{
+  fill: white;
 }
 
 /* responsive */
 @media only screen and (max-width: 768px ){
     footer{
         height: auto;
+        margin-bottom: 15px;
     }
     .containerFooter{
         display: flex;
@@ -83,16 +115,15 @@ footer{
         flex-direction: column;
         height: auto;
         width: auto;
-
       }
       .alamatFooter h3{
         font-size: 80%;
       }
-      .medsosFooter img{
-        height: 50%;
-      }
       .medsosFooter{
-        justify-content: center;
+        justify-items:center;
+      }
+      .logoFooter img{
+        height: 60px;
       }
       .logofooter h1{
         display: flex;
