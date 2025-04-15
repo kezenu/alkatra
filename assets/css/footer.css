@@ -15,7 +15,7 @@ footer{
     margin: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 100px 20px;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-areas: 
         "logoFooter medsosFooter"
         "alamatFooter medsosFooter"
@@ -65,7 +65,10 @@ footer{
 }
 
 .copyFooter{
+    padding-bottom: 0;
     grid-area: copyFooter;
+    width: 100%;
+    justify-items: center;
 }
 
 #fbLogo{
